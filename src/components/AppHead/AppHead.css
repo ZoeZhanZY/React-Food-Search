@@ -1,0 +1,15 @@
+.appHead {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo {
+}
+
+.brandTitle {
+  font-family: "Potta One", cursive;
+  font-size: 62px;
+  color: coral;
+}

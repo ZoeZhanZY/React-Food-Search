@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RecipeDetails from "./RecipeDetails";
+import RecipeDetails from "../RecipeDetails/RecipeDetails";
 
 const Recipe = ({ recipeProp }) => {
   const [show, setShow] = useState(false);
