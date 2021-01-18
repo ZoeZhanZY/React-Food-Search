@@ -1,0 +1,15 @@
+.ingredient-list {
+  margin: 1rem 0 0 0;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+}
+
+.ingredient-text {
+  font-size: 1rem;
+  color: #888;
+}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Axios from "axios";
-
+import "./SearchBox.css";
 import Alert from "../Alert/Alert";
 
 const SearchBox = (props) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState([]);
 
   const [alert, setAlert] = useState("");
 
@@ -43,21 +43,27 @@ const SearchBox = (props) => {
   return (
     <div>
       {/* trigger {onSubmit} when the event onSubmit happen */}
+      <div>
+        <form action="" className="searchForm" onSubmit={onSubmit}>
+          <input
+            className="searchText"
+            type="text"
+            placeholder="Search Food Recipe"
+            autoComplete="off"
+            // trigger {onChange} when the event onChange happen
+            onChange={onChange}
+            // {query} initially equal to "", and then updated by {setQuery}
+            value={query}
+          />
 
-      <form action="" className="search-form" onSubmit={onSubmit}>
-        {alert !== "" && <Alert alert={alert} />}
-        <input
-          type="text"
-          placeholder="Search Food"
-          autoComplete="off"
-          // trigger {onChange} when the event onChange happen
-          onChange={onChange}
-          // {query} initially equal to "", and then updated by {setQuery}
-          value={query}
-        />
-
-        <input type="submit" value="search" />
-      </form>
+          <input
+            className="searchButton primaryButton"
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </div>
+      <div>{alert !== "" && <Alert alert={alert} />}</div>
     </div>
   );
 };

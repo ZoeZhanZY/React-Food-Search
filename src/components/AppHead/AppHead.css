@@ -1,15 +1,31 @@
 .appHead {
   display: flex;
   justify-content: center;
-  padding: 10px;
   align-items: center;
+  margin: 50px 10px 50px 10px;
 }
 
 .logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
 }
 
 .brandTitle {
+  /* text-shadow: 0px 2px 3px #150356; */
   font-family: "Potta One", cursive;
-  font-size: 62px;
-  color: coral;
+  font-size: 36px;
+  color: #fff900;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 450px) {
+  .brandTitle {
+    font-size: 42px;
+  }
+}
+
+.letterSpace {
+  margin-right: -2px;
 }

@@ -8,11 +8,13 @@ const App = () => {
   const [recipes, setRecipes] = useState([]);
 
   return (
-    <>
-      <AppHead brand="Food Search" />
-      <SearchBox setRecipes={setRecipes} />
-      <SearchResultList recipes={recipes} />
-    </>
+    <div className="App">
+      <div className="appContent">
+        <AppHead brand="Food Search" />
+        <SearchBox setRecipes={setRecipes} />
+        <SearchResultList recipes={recipes} />
+      </div>
+    </div>
   );
 };
 

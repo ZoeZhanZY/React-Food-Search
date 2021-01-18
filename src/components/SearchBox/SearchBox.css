@@ -1,0 +1,39 @@
+.searchForm {
+  width: 90vw;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.searchText {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  height: 36px;
+  border: none;
+  border-radius: 3px;
+}
+
+.searchButton {
+  height: 36px;
+}
+
+@media (min-width: 450px) {
+  .searchForm {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px; */
+  }
+
+  .searchText {
+    margin: 0 20px 0 0;
+    float: left;
+    width: 80%;
+  }
+
+  .searchButton {
+    float: right;
+    width: 20%;
+  }
+}

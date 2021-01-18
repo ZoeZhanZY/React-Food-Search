@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import "./Ingredients.css";
 
 export const RecipeDetails = ({ ingredients }) => {
   return ingredients.map((ingredient) => {
@@ -8,7 +9,6 @@ export const RecipeDetails = ({ ingredients }) => {
     return (
       <ul key={uuidv4()} className="ingredient-list">
         <li className="ingredient-text">{text}</li>
-        <li className="ingredient-weight">Weight - {weight}</li>
       </ul>
     );
   });
