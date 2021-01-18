@@ -18,12 +18,12 @@ const SearchBox = (props) => {
       const result = await Axios.get(url);
       if (!result.data.more) {
         return setAlert("No food with such name");
-      }
-      {
+      } else {
         props.setRecipes(result.data.hits);
+
+        setAlert("");
+        setQuery("");
       }
-      setAlert("");
-      setQuery("");
     } else {
       setAlert("Please fill the form");
     }

@@ -4,7 +4,7 @@ import "./Ingredients.css";
 
 export const RecipeDetails = ({ ingredients }) => {
   return ingredients.map((ingredient) => {
-    const { text, weight } = ingredient;
+    const { text } = ingredient;
 
     return (
       <ul key={uuidv4()} className="ingredient-list">
